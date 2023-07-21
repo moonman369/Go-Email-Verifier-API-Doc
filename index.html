@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/email.png" type="image/x-icon">
+    <title>GO Email Verifier</title>
+</head>
+<body>
+    <img src="./assets/email.png" alt="logo">
+    <h1>Welcome To Go Email Verifier<h1><br><br><h2 id="api-documentation">API Documentation</h2>
+        <h3 id="1-verify-domain">1. VERIFY DOMAIN</h3>
+        <ul>
+        <li>Base URL: <code class="inline">https://go-email-verifier.cleverapps.io</code></li>
+        <li>Endpoint: <code class="inline">/verify</code></li>
+        <li>Method: <code class="inline">POST</code></li>
+        <li>Example Request Body:
+            <div class="code">
+                <pre><code>
+{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"doma.in"</span>,
+}
+                    </code></pre>
+            </div>
+        </li>
+        <li>Example Successful Response:
+            <div class="code">
+                <pre><code>200 <span class="hljs-keyword">OK</span><br>
+{
+  <span class="hljs-string">"domain"</span>: <span class="hljs-string">"doma.in"</span>,
+  <span class="hljs-string">"hasMX"</span>: <span class="hljs-keyword">true</span>,
+  <span class="hljs-string">"hasSPF"</span>: <span class="hljs-keyword">true</span>,
+  <span class="hljs-string">"spfRecord"</span>: <span class="hljs-string">"spf_record"</span>,
+  <span class="hljs-string">"hasDMARC"</span>: <span class="hljs-keyword">true</span>,
+  <span class="hljs-string">"dmarcRecord"</span>: <span class="hljs-string">"dmarc_record"</span>
+}
+                    </code></pre>
+            </div>
+        <br></li>
+    </ul>
+</body>
+</html>

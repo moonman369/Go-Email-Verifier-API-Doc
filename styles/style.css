@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(10, 10, 10);
+  color: rgb(212, 212, 212);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  width: 150px;
+}
+
+h1 {
+  color: rgb(51, 252, 141);
+}
+
+.inline {
+  background-color: rgb(53, 53, 53);
+  color: rgb(51, 252, 141);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.code {
+  margin-top: 10px;
+  background-color: rgb(53, 53, 53);
+  color: rgb(51, 252, 141);
+  padding: 10px;
+  border-radius: 10px;
+  width: 20rem;
+}
+
+li {
+  margin-bottom: 2rem;
+}
